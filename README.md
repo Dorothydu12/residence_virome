@@ -1,4 +1,4 @@
-#Residence Virome & Microbiome Dynamics Analysis
+Residence Virome & Microbiome Dynamics Analysis
 Data availability
 Email: shicongdu2@cityu.edu.hk
 
@@ -13,11 +13,11 @@ This repository contains R scripts and computational pipelines for analyzing the
    Network Analysis: Constructs undirected graphs from adjacency matrices across temporal slices and extracts influential nodes (IVI - Index of Network Node Importance).
 
 2. Species Abundance Distributions & Taylor’s Power Law (02_sad_and_taylor.R)\
-   SAD Fitting: Fits regional abundance data to theoretical distributions (lnorm, bs, weibull) using sads, and evaluates model performance via AIC and $R^2$.
-   Taylor’s Power Law: Evaluates spatial-temporal aggregation patterns ($\log(\sigma^2) = \log(a) + b \cdot \log(\mu)$) to distinguish random, clumped, or strongly aggregated distributions.
+   SAD Fitting: Fits regional abundance data to theoretical distributions (lnorm, bs, weibull) using sads, and evaluates model performance.
+   Taylor’s Power Law: Evaluates spatial-temporal aggregation patterns to distinguish random, clumped, or strongly aggregated distributions.
 
 3. Spatiotemporal Occupancy Dynamics & Null Models (04_sto_and_null_models.R)
-   STO Slopes: Computes temporal occupancy dynamics ($O_i(t)$) for species across tracking periods and extracts linear regression slopes.
+   STO Slopes: Computes temporal occupancy dynamics for species across tracking periods and extracts linear regression slopes.
    Co-occurrence Null Models: Employs EcoSimR::cooc_null_model (fixed-fixed algorithm sim9, 10,000 replications) to analyze C-score metrics and test for non-random community assembly.
 
 4. Machine Learning & Time Series Forecasting (03_temporal_forecasting.R)
