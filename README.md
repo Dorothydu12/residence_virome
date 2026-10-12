@@ -16,11 +16,11 @@ This repository contains R scripts and computational pipelines for analyzing the
    SAD Fitting: Fits regional abundance data to theoretical distributions (lnorm, bs, weibull) using sads, and evaluates model performance.
    Taylor’s Power Law: Evaluates spatial-temporal aggregation patterns to distinguish random, clumped, or strongly aggregated distributions.
 
-3. Spatiotemporal Occupancy Dynamics & Null Models (04_sto_and_null_models.R)
+3. Spatiotemporal Occupancy Dynamics & Null Models (03_sto_and_null_models.R)
    STO Slopes: Computes temporal occupancy dynamics for species across tracking periods and extracts linear regression slopes.
    Co-occurrence Null Models: Employs EcoSimR::cooc_null_model (fixed-fixed algorithm sim9, 10,000 replications) to analyze C-score metrics and test for non-random community assembly.
 
-4. Machine Learning & Time Series Forecasting (03_temporal_forecasting.R)
+4. Machine Learning & Time Series Forecasting (04_temporal_forecasting.R)
    Dimensionality Reduction: Applies Singular Value Decomposition (SVD) on scaled matrices to extract dominant orthogonal signals based on cumulative variance thresholds (e.g., 80%).
    Forecasting Benchmarking: Compares multi-model predictive performance (ARIMA, NNETAR, Prophet, and Log-transformed Linear Regression) using MAE, RMSE, and $R^2$ metrics on held-out test sets.
 
